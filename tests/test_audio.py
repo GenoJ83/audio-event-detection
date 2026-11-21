@@ -1,3 +1,5 @@
+import pytest
+pytest.importorskip("torch")
 """Unit tests for waveform generator, spectrogram, and AudioCNN."""
 import torch
 from src.data.audio_generator import generate_synthetic_audio
